@@ -1,0 +1,198 @@
+@font-face {  font-family: Baskerville;  font-weight: 100;  src: url('baskerville/BASKRV_L.woff');}
+@font-face { font-family: Baskerville; font-style: italic; src: url('baskerville/Baskervville-Italic.ttf');}
+@font-face {  font-family: Baskerville;  src: url('baskerville/Baskervville-Regular.ttf');}
+
+
+html,
+body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow-y:hidden;
+    font-family: Baskerville, sans-serif;
+    color: #2a2a2a;
+}
+
+h1, h2 {
+    font-weight: normal;
+    margin: 2px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+p {
+    position: relative;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: left;
+    margin-top: 1px;
+}
+
+.page-wrapper {
+    display:flex; /* divy są jeden koło drugiego, bo domyślnie flex-direction tak wskazuje */
+    width:100%;
+    height:100%;
+}
+
+.image-container{
+    height:100%;
+    z-index:111;
+}
+.image-container img{
+    height:100%;
+}
+
+.content-container{
+    height:100%;
+    width: 100%;
+}
+
+.header{
+    position:absolute;
+    height:40px;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.83);
+    z-index:100;
+    padding-top:20px;
+    font-size:1rem;
+}
+
+.header .seashell{
+    display:none;
+}
+
+.full-width-header{
+    display: none;
+}
+
+.instagram{
+    float: right;
+    background: url(icons/logo-instagram.png);
+    width: 25px;
+    height: 25px;
+    margin-right:35px;
+    margin-top: -3px;
+}
+
+/*.seashell{*/
+/*    position:absolute;*/
+/*    background: url(icons/seashell-icon.jpg);*/
+/*    width:30px;*/
+/*    height:27px;*/
+/*    z-index: 112;*/
+/*    margin: 18px 0px 0px 20px*/
+/*}*/
+
+.icon {
+    background-size: cover;
+    border: none;
+}
+
+.header .contact{
+    float: right;
+    margin-right: 30px;
+}
+
+.number{
+    font-weight: 100;
+    margin-top: 3px;
+}
+
+.content {
+    position:relative;
+    top:0;
+    left:0;
+    height:100%;
+    text-align: center;
+    overflow-y:scroll;
+}
+
+.content{
+    padding-top: 20vh;
+}
+
+.content .image-wrapper img{
+    max-width:100%;
+    max-height:100%;
+}
+
+@media (max-width:1420px) {
+
+    body {
+        font-size:3vw;
+    }
+
+    .page-wrapper{
+        flex-direction:column;
+        overflow-y: scroll;
+    }
+
+    .header{
+        z-index:112;
+    }
+
+    .header .seashell{
+        display:block;
+        margin-top: -3px;
+    }
+
+    .side-header{
+        display: none;
+    }
+
+    .full-width-header{
+        display: block;
+    }
+
+    .image-container img{
+        height:40vh;
+    }
+
+    img{
+        width:100%;
+        object-fit:cover;
+        object-position: bottom;
+    }
+
+    .content{
+        padding-top: 5vh;
+        overflow-y: hidden;
+        height:auto;
+    }
+
+    /*.content-container .seashell{*/
+    /*    display:none;*/
+    /*}*/
+
+}
+
+@media (max-width:600px) {
+
+    .header{
+        font-size: 0.8rem;
+    }
+
+    .image-container{
+        height:250px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+}
