@@ -45,7 +45,7 @@ p {
     height:100%;
     z-index:111;
 }
-.image-container img{
+.image-container .side-header{
     height:100%;
 }
 
@@ -58,13 +58,12 @@ p {
     position:absolute;
     height:40px;
     width:100%;
-    background-color:rgba(255, 255, 255, 0.83);
     z-index:100;
-    padding-top:20px;
+    padding-top:10px;
     font-size:1rem;
 }
 
-.header .seashell{
+.header .linkedin, .header .instagram{
     display:none;
 }
 
@@ -72,23 +71,31 @@ p {
     display: none;
 }
 
-.instagram{
-    float: right;
-    background: url(icons/logo-instagram.png);
-    width: 25px;
-    height: 25px;
-    margin-right:35px;
-    margin-top: -3px;
+/*.instagram{*/
+/*    float: right;*/
+/*    background: url(icons/logo-instagram.png);*/
+/*    width: 25px;*/
+/*    height: 25px;*/
+/*    margin-right:35px;*/
+/*    margin-top: -3px;*/
+/*}*/
+
+.instagram, .linkedin{
+    position:absolute;
+    width:30px;
+    height:27px;
+    z-index: 112;
 }
 
-/*.seashell{*/
-/*    position:absolute;*/
-/*    background: url(icons/seashell-icon.jpg);*/
-/*    width:30px;*/
-/*    height:27px;*/
-/*    z-index: 112;*/
-/*    margin: 18px 0px 0px 20px*/
-/*}*/
+.instagram{
+    background: url(icons/logo-instagram.png);
+    margin: 18px 0px 0px 20px
+}
+
+.linkedin{
+    background: url(icons/logo-linkedin.png);
+    margin: 18px 0px 0px 60px
+}
 
 .icon {
     background-size: cover;
@@ -97,12 +104,12 @@ p {
 
 .header .contact{
     float: right;
-    margin-right: 30px;
+    margin-right: 50px;
+    font-size: 1.5rem;
 }
 
-.number{
-    font-weight: 100;
-    margin-top: 3px;
+.contact:hover {
+    cursor: pointer;
 }
 
 .content {
@@ -123,7 +130,69 @@ p {
     max-height:100%;
 }
 
-@media (max-width:1420px) {
+.olsali-white{
+    position: absolute;
+    left: 8vh;
+    height: 9vh;
+    bottom: 7vh;
+}
+
+.contact-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    background: white;
+    z-index: 11111111;
+    text-align: center;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+
+.olsali-collective{
+    width: 500px;
+}
+
+.olsali-collective:hover {
+    cursor: pointer;
+}
+
+.star{
+    height: 5%;
+}
+
+.collective{
+    position: absolute;
+    bottom: 17vh;
+    left: 0px;
+    width: 100%;
+    font-size: 1.3rem;
+
+}
+
+.number{
+    font-weight: 100;
+    font-size: 1.1rem;
+    bottom:10vh;
+}
+
+.copyright{
+    font-weight: 100;
+    font-size: 0.8rem;
+    bottom:2vh;
+}
+
+hr {
+    position: absolute;
+    bottom: 4vh;
+    width: 30vw;
+    text-align: center;
+    left: 35vw;
+}
+
+
+@media (max-width:1220px) {
 
     body {
         font-size:3vw;
@@ -136,14 +205,15 @@ p {
 
     .header{
         z-index:112;
+        background-color: rgba(255, 255, 255, 0.47);
     }
 
-    .header .seashell{
+    .header .instagram, .header .linkedin{
         display:block;
         margin-top: -3px;
     }
 
-    .side-header{
+    .side-header, .olsali-white{
         display: none;
     }
 
@@ -151,8 +221,8 @@ p {
         display: block;
     }
 
-    .image-container img{
-        height:40vh;
+    .image-container .full-width-header{
+        height:50vh;
     }
 
     img{
@@ -167,9 +237,9 @@ p {
         height:auto;
     }
 
-    /*.content-container .seashell{*/
-    /*    display:none;*/
-    /*}*/
+    .content-container .linkedin, .content-container .instagram{
+        display:none;
+    }
 
 }
 

@@ -10,26 +10,43 @@
         <link rel="stylesheet" type="text/css" href="photos.css"/>
         <link rel="stylesheet" type="text/css" href="photos-tablet.css"/>
         <script src="data.js" type="text/javascript"></script>
+        <script src="contactActions.js" type="text/javascript"></script>
         <script src="renderPhotos.js" type="text/javascript"></script>
-        </head>
+    </head>
     <body>
+        <div class='contact-wrapper' id='contact'>
+            <img class='olsali-collective' src='photos/Olsali.png' onclick="hideContact()">
+            <br>
+            <img class='star' src='photos/star.png'>
+            <br>
+            <br>
+
+            <h1 style="font-size:3.5rem">creative agency that meets all your needs</h1>
+            <h2 style="font-size:1.7rem">content • photography • makeup • fashion • set design</h2>
+
+            <span class="collective"> Agata Sadowska | make - up artist &nbsp &nbsp  Michalina Libert | fashion • set design  &nbsp &nbsp Anita Olbrys | photographer • retouch</span>
+            <span class="number collective"> + 48 571 469 825 &nbsp &nbsp olsali@collective.com</span>
+            <hr>
+            <span class="copyright collective"> COPYRIGHT 2022 © OLSALI COLLECTIVE</span>
+
+        </div>
         <div class='page-wrapper'>
             <div class='header'>
-<!--                <div class='seashell icon'></div>-->
-                <button class='instagram icon'></button>
-                <div class='contact'>
-                    olsali.collective@gmail.com
-                </div>
-                <div class='contact number'>
-                    +48 571 469 825
+                <a href="https://www.instagram.com/olsali.collective/" class='instagram icon'></a>
+                <button class='linkedin icon'></button>
+                <div class='contact' onclick="showContact()">
+                    contact
                 </div>
             </div>
             <div class='image-container'>
-                <img class='side-header' src='photos/side_header.jpg'>
+                <img class='side-header' src='photos/n_11.png'>
                 <img class='full-width-header' src='photos/header.jpg'>
+                <img class='olsali-white' src='photos/olsali_white.png'>
             </div>
             <div class='content-container'>
 <!--                <div class='seashell icon'></div>-->
+                <a href="https://www.instagram.com/olsali.collective/" class='instagram icon'></a>
+                <button class='linkedin icon'></button>
                 <div class='content'>
                     <h1>creative agency that meets all your needs</h1>
                     <h2>content • photography • makeup • fashion • set design</h2>
