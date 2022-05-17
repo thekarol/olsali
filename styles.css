@@ -150,6 +150,17 @@ p {
     transition: opacity 600ms, visibility 600ms;
 }
 
+.loader-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 11111111;
+    text-align: center;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+
 .olsali-collective{
     width: 500px;
 }
@@ -190,7 +201,6 @@ hr {
     text-align: center;
     left: 35vw;
 }
-
 
 @media (max-width:1220px) {
 

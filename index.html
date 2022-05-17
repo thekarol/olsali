@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" type="text/css" href="spinner.css"/>
         <link rel="stylesheet" type="text/css" href="photos.css"/>
         <link rel="stylesheet" type="text/css" href="photos-tablet.css"/>
         <script src="data.js" type="text/javascript"></script>
@@ -14,8 +15,12 @@
         <script src="renderPhotos.js" type="text/javascript"></script>
     </head>
     <body>
+        <div class='loader-wrapper' id='loader'>
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <div> loading... </div>
+        </div>
         <div class='contact-wrapper' id='contact'>
-            <img class='olsali-collective' src='photos/Olsali.png' onclick="hideContact()">
+            <img class='olsali-collective initLoad' src='photos/Olsali.png' onclick="hideContact()">
             <br>
             <img class='star' src='photos/star.png'>
             <br>
@@ -39,9 +44,9 @@
                 </div>
             </div>
             <div class='image-container'>
-                <img class='side-header' src='photos/n_11.png'>
-                <img class='full-width-header' src='photos/header.jpg'>
-                <img class='olsali-white' src='photos/olsali_white.png'>
+                <img class='side-header initLoad' src='photos/n_11.png'>
+                <img class='full-width-header initLoad' src='photos/header.jpg'>
+                <img class='olsali-white initLoad' src='photos/olsali_white.png'>
             </div>
             <div class='content-container'>
 <!--                <div class='seashell icon'></div>-->
