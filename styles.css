@@ -23,6 +23,10 @@ h1 {
     font-size: 2.2rem;
 }
 
+.content h1{
+    padding-top: 20vh;
+}
+
 h2 {
     font-size: 1.1rem;
 }
@@ -104,8 +108,12 @@ p {
 
 .header .contact{
     float: right;
-    margin-right: 50px;
+    margin-right: 5vh;
     font-size: 1.5rem;
+}
+
+.contact-wrapper .contact{
+    margin-right: 3vh;
 }
 
 .contact:hover {
@@ -134,7 +142,8 @@ p {
 }
 
 .contact-wrapper{
-    overflow: auto;
+    overflowp-y: auto;
+    overflow-x: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -198,12 +207,17 @@ hr {
     width: 30vw;
     text-align: center;
     left: 35vw;
+    font-size: 1rem;
 }
 
 @media (max-width:1360px) {
 
     body {
         font-size:3vw;
+    }
+
+    p {
+        font-size: 0.7rem;
     }
 
     .page-wrapper{
@@ -245,6 +259,10 @@ hr {
         height:auto;
     }
 
+    .content h1{
+        padding-top: 0vh;
+    }
+
     .content-container .linkedin, .content-container .instagram{
         display:none;
     }
@@ -257,8 +275,16 @@ hr {
         font-size: 0.8rem;
     }
 
+    .header .contact {
+        margin-right: 4vh;
+    }
+
     .image-container{
         height:250px;
+    }
+
+    .image-container .full-width-header {
+        height: 30vh;
     }
 
     h1 {
@@ -267,10 +293,6 @@ hr {
 
     h2 {
         font-size: 0.8rem;
-    }
-
-    p {
-        font-size: 0.7rem;
     }
 
 }

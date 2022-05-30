@@ -4,7 +4,7 @@ function DOMContentLoaded(evt)
 {
     let allImages = Array.from( document.getElementsByClassName('initLoad') );
     let numRemaining = allImages.length;
-    allImages.forEach(  img => img.onload = img.onerror = onImgDone );
+    allImages.forEach(  img =>  img.complete && img.naturalHeight !== 0 ? numRemaining-- : img.onload = img.onerror = onImgDone );
 
     function onImgDone(evt)
     {
@@ -30,7 +30,7 @@ window.onload = function() {
 
         anchor.innerHTML +=
             `<div style="${style}">` +
-                `<img id=img-${Number(index)+1} src=${src} class="initLoad")">` +
+                `<img id=img-${Number(index)+1} src=${src} )">` +
                 `<p id=p-${Number(index)+1}> ${p} </p>` +
             '</div>'
     }
