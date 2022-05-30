@@ -16,29 +16,42 @@
     </head>
     <body>
         <div class='loader-wrapper' id='loader'>
-            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-            <div> loading... </div>
+            <h1>
+                <span class="loading">o</span>
+                <span class="loading">l</span>
+                <span class="loading">s</span>
+                <span class="loading">a</span>
+                <span class="loading">l</span>
+                <span class="loading">i</span>
+                <span class="dot let8">.</span>
+                <span class="dot let9">.</span>
+                <span class="dot let10">.</span>
+            </h1>
         </div>
         <div class='contact-wrapper' id='contact'>
+            <div style="height:100%" >
 
-            <div class='contact' onclick="hideContact()" style="float:right">
-                <img src='icons/eye.png' style="height: 70px; margin-right: 45px;">
+
+                <div class='contact' onclick="hideContact()" style="float:right">
+                    <img src='icons/eye.png' style="height: 70px; margin-right: 30px;">
+                </div>
+
+                <img class='olsali-collective initLoad' src='photos/Olsali.png' onclick="hideContact()" style="margin-top: 100px; margin-left: 135px;">
+                <br>
+                <img class='star' src='photos/star.png'>
+                <br>
+                <br>
+
+                <h1 style="font-size:3.5rem">creative agency that meets all your needs</h1>
+                <h2 style="font-size:1.7rem">content • photography • makeup • fashion • set design</h2>
+
+                <span class="collective"> Agata Sadowska | make - up artist &nbsp &nbsp  Michalina Libert | fashion • set design  &nbsp &nbsp Anita Olbrys | photographer • retouch</span>
+                <span class="number collective"> + 48 571 469 825 &nbsp &nbsp olsali@collective.com</span>
+
+                <hr>
+                <span class="copyright collective"> COPYRIGHT 2022 © OLSALI COLLECTIVE</span>
+
             </div>
-
-            <img class='olsali-collective initLoad' src='photos/Olsali.png' onclick="hideContact()" style="margin-top: 100px; margin-left: 135px;">
-            <br>
-            <img class='star' src='photos/star.png'>
-            <br>
-            <br>
-
-            <h1 style="font-size:3.5rem">creative agency that meets all your needs</h1>
-            <h2 style="font-size:1.7rem">content • photography • makeup • fashion • set design</h2>
-
-            <span class="collective"> Agata Sadowska | make - up artist &nbsp &nbsp  Michalina Libert | fashion • set design  &nbsp &nbsp Anita Olbrys | photographer • retouch</span>
-            <span class="number collective"> + 48 571 469 825 &nbsp &nbsp olsali@collective.com</span>
-            <hr>
-            <span class="copyright collective"> COPYRIGHT 2022 © OLSALI COLLECTIVE</span>
-
         </div>
         <div class='page-wrapper'>
             <div class='header'>
@@ -58,10 +71,11 @@
                 <a href="https://www.instagram.com/olsali.collective/" class='instagram icon'></a>
                 <button class='linkedin icon'></button>
                 <div class='content'>
-                    <h1>creative agency that meets all your needs</h1>
+                    <h1 style="padding-top: 20vh;">creative agency that meets all your needs</h1>
                     <h2>content • photography • makeup • fashion • set design</h2>
                     <div class='photos' id='photos'></div>
-                    </div>
+                    <span class="copyright"> COPYRIGHT 2022 © OLSALI COLLECTIVE</span>
+                </div>
             </div>
         </div>
     </body>

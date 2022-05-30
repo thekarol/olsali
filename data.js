@@ -1,59 +1,97 @@
 const photos = [
     {
-        width:18,
-        src: 'photos/1.jpg',
-        top:15,
-        bottom:20,
-        left:5,
+        src: 'photos/1.png',
         p:'olsali collective / personal'
     },
     {
-        width:18,
-        src: 'photos/2.jpg',
-        top:0,
-        bottom:0,
-        left:2.5,
+        src: 'photos/2.png',
         p:'anita olbrys / personal'
     },
     {
-        width:25,
-        src: 'photos/3.jpg',
-        top:0,
-        bottom:0,
-        left:0,
+        src: 'photos/3.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/4.png',
         p:''
     },
     {
-        width:25,
-        src: 'photos/4.jpg',
-        top:0,
-        bottom:0,
-        left:0,
+        src: 'photos/5.png',
+        p:'agata sadowska / personal'
+    },
+    {
+        src: 'photos/6.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/7.png',
+        p:'agata sadowska / k-mag magazine'
+    },
+    {
+        src: 'photos/8.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/9.png',
+        p:'michalina libert / medicine'
+    },
+    {
+        src: 'photos/10.png',
         p:''
     },
     {
-        width:25,
-        src: 'photos/5.jpg',
-        top:0,
-        bottom:0,
-        left:0,
+        src: 'photos/11.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/12.png',
+        p:'anita olbrys / personal'
+    },
+    {
+        src: 'photos/13.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/14.png',
+        p:'anita olbrys / personal'
+    },
+    {
+        src: 'photos/15.png',
+        p:'agata sadowska / personal'
+    },
+    {
+        src: 'photos/17.png',
         p:''
     },
     {
-        width:25,
-        src: 'photos/6.jpg',
-        top:0,
-        bottom:0,
-        left:0,
+        src: 'photos/16.png',
+        p:'michalina libert / personal'
+    },
+    {
+        src: 'photos/18.png',
+        p:'anita olbrys / personal'
+    },    {
+        src: 'photos/19.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/20.png',
         p:''
     },
     {
-        width:25,
-        src: 'photos/7.jpg',
-        top:0,
-        bottom:0,
-        left:0,
+        src: 'photos/21.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/22.png',
+        p:'olsali collective / personal'
+    },
+    {
+        src: 'photos/23.png',
         p:''
+    },    {
+        src: 'photos/24.png',
+        p:'olsali collective / personal'
     },
 
 ]

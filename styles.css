@@ -121,10 +121,6 @@ p {
     overflow-y:scroll;
 }
 
-.content{
-    padding-top: 20vh;
-}
-
 .content .image-wrapper img{
     max-width:100%;
     max-height:100%;
@@ -138,6 +134,7 @@ p {
 }
 
 .contact-wrapper{
+    overflow: auto;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -191,18 +188,19 @@ p {
 .copyright{
     font-weight: 100;
     font-size: 0.8rem;
-    bottom:2vh;
+    bottom:-30px;
+    padding-bottom: 10px;
 }
 
 hr {
     position: absolute;
-    bottom: 4vh;
+    bottom: -10px;
     width: 30vw;
     text-align: center;
     left: 35vw;
 }
 
-@media (max-width:1220px) {
+@media (max-width:1360px) {
 
     body {
         font-size:3vw;
