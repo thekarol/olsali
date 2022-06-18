@@ -287,6 +287,10 @@ hr {
         height: 30vh;
     }
 
+    p {
+        font-size: 0.5rem;
+    }
+
     h1 {
         font-size: 1.3rem;
     }
