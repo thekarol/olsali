@@ -169,6 +169,8 @@ p {
 
 .olsali-collective{
     width: 500px;
+    margin-top: 100px;
+    margin-left: 135px;
 }
 
 .olsali-collective:hover {
@@ -177,6 +179,8 @@ p {
 
 .star{
     height: 5%;
+    margin-top: 7vh;
+    width: auto;
 }
 
 .collective{
@@ -185,7 +189,10 @@ p {
     left: 0px;
     width: 100%;
     font-size: 1.3rem;
+}
 
+.smaller{
+    font-size: 1.1rem;
 }
 
 .number{
@@ -208,6 +215,24 @@ hr {
     text-align: center;
     left: 35vw;
     font-size: 1rem;
+}
+
+.contact-wrapper-h1 {
+    font-size: 3.2rem;
+    margin-top: 2.5vh;
+}
+
+.contact-wrapper-h2 {
+    font-size: 1.9rem;
+    margin-top: 0.5vh;
+}
+
+.digits{
+    font-size: 1rem;
+}
+
+.stars{
+    display: none;
 }
 
 @media (max-width:1360px) {
@@ -267,9 +292,92 @@ hr {
         display:none;
     }
 
+    .contact-wrapper-h1 {
+        font-size: 3.2rem;
+        margin-top: 0.5vh;
+    }
+
+    .contact-wrapper-h2 {
+        font-size: 3.2rem;
+        margin-top: 0.5vh;
+    }
+
+
+}
+
+@media (max-width:1000px) {
+
+    .olsali-collective{
+        margin-top: 240px;
+        margin-bottom: 4vh;
+    }
+
+    .star{
+        margin-top: 3vh;
+    }
+
+    .stars{
+        display: inline-block;
+        margin-top: 7vh;
+        height: 7%;
+    }
+
+    .number{
+        font-size: 1.4rem;
+    }
+
+    .digits{
+        font-size: 1.3rem;
+    }
+
+    .contact-wrapper-h1 {
+        font-size: 2.5rem;
+        margin-top: 4.5vh;
+    }
+
+    .contact-wrapper-h2 {
+        font-size: 1.4rem;
+        margin-top: 0.5vh;
+    }
+
 }
 
 @media (max-width:600px) {
+    .olsali-collective{
+        width: 250px;
+        margin-top: 40px;
+        margin-bottom: 4vh;
+        margin-left: 16px;
+    }
+
+    .star{
+        margin-top: 3vh;
+    }
+
+    .stars{
+        display: inline-block;
+        margin-top: 7vh;
+        height: 7%;
+    }
+
+    .number{
+        font-size: 0.9rem;
+    }
+
+    .digits{
+        font-size: 0.8rem;
+    }
+
+    .contact-wrapper-h1 {
+        font-size: 1rem;;
+        margin-top: 4.5vh;
+    }
+
+    .contact-wrapper-h2 {
+        font-size: 0.6rem;
+        margin-top: 0.5vh;
+    }
+
 
     .header{
         font-size: 0.8rem;
